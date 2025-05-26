@@ -94,24 +94,16 @@ void PostOrder (Isi_Tree P, int i){
     printf("%c ", P[i].info);
 }
 
-void Level_order(Isi_Tree X, int Maks_node) {
+void Level_order(Isi_Tree X) {
     int queue[21];  
-    int front = 0, rear = 0;
+    int front = 0, rear = 0, i = 1;
 
-    if (Maks_node == 0) return;
-
-    queue[rear++] = 1; 
-
-    while (front < rear) {
-        int current = queue[front++];
-        printf("%c ", X[current].info);
-
-        int child = X[current].ps_fs;
-        while (child != 0) {
-            queue[rear++] = child;
-            child = X[child].ps_nb; 
-        }
-    }
+    if (X[i].info == '\0') return;
+    
+    while(X[i].info != '\0'){
+    	printf("%c", X[i].info);
+    	i++;
+	}
 }
 
 void PrintTree(Isi_Tree X) {
