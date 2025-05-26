@@ -69,7 +69,7 @@ void menuNBT(){
             	printf("\x1b[H\x1b[J");
             	printf("\n--- Traversal ---\n");
             	printf("\nLevel Order  : ");
-    			Level_order(pohon, jumlahNode);
+    			Level_order(pohon);
     			
     			printf("\nTekan Enter untuk kembali ke menu...");
 				getchar();
