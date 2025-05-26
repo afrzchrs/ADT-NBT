@@ -101,7 +101,7 @@ void Level_order(Isi_Tree X) {
     if (X[i].info == '\0') return;
     
     while(X[i].info != '\0'){
-    	printf("%c", X[i].info);
+    	printf("%c ", X[i].info);
     	i++;
 	}
 }
