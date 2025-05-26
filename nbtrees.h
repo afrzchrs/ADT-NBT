@@ -49,7 +49,7 @@ void PostOrder (Isi_Tree P, int i);
 /* IS : P terdefinisi */ 
 /* FS : Semua simpul P sudah ditampilkan secara PostOrder :  fs, nb, 
 Parent */ 
-void Level_order(Isi_Tree X, int Maks_node); 
+void Level_order(Isi_Tree X); 
 /* Traversal LevelOrder */ 
 /* IS : P terdefinisi */ 
 /* FS : Semua simpul P sudah ditampilkan secara Level Order */ 
